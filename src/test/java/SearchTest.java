@@ -25,10 +25,6 @@ public class SearchTest {
         WebElement googleLuck = driver.findElement(By.xpath("//input[@name='btnI']"));
         List<WebElement> googleLuckList = driver.findElements(By.xpath("//input[@name='btnI']"));
         googleLuckList.get(1).click();
-//        googleLuck.click();
-//        searchField.click();
-//        googleAppsButton.click();
-//        googleAppsButtonAlternative.click();
         driver.quit();
     }
 }

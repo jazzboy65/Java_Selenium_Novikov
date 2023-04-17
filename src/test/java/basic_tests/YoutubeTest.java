@@ -1,23 +1,16 @@
 package basic_tests;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import tests.BaseTest;
 import org.testng.annotations.Test;
 
-import java.io.File;
-
-public class YoutubeTest {
+public class YoutubeTest extends BaseTest {
 
     @Test
     public void openYoutubeTest() {
-        File file = new File("src/test/resources/chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver",
-                file.getAbsolutePath());
-        WebDriver driver = new ChromeDriver();
-        driver.navigate().to("https://www.youtube.com/");
-        driver.navigate().refresh();
+        getDriver().navigate().to("https://www.youtube.com/");
+        getDriver().navigate().refresh();
 
-        System.out.println(driver.getTitle());
-        driver.quit();
+        System.out.println(getDriver().getTitle());
+        getDriver().quit();
     }
 }

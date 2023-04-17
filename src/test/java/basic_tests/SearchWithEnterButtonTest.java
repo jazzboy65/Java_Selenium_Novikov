@@ -5,9 +5,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
-
-import static com.codeborne.selenide.Selenide.*;
-import static helpers.base_locators.BaseLocators.searchResult;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
+import static basic_tests.base_locators.BaseLocators.searchResult;
 
 
 public class SearchWithEnterButtonTest {
